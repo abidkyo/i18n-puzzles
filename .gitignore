@@ -1,0 +1,6 @@
+__pycache__
+*/input/*.txt
+!*/input/*test.txt
+
+build/
+
