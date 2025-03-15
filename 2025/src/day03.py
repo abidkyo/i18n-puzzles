@@ -4,7 +4,7 @@
 Character Properties.
 """
 
-from aoc import AOCSolver, integers
+from aoc import AOCSolver
 
 # ------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ class Day03Solver(AOCSolver):
             if not (4 <= len(line) <= 12):
                 continue
 
-            if not integers(line):
+            if not any(c.isdigit() for c in line):
                 continue
 
             if not any(ord(c) > 127 for c in line):
